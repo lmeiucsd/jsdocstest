@@ -1,4 +1,4 @@
-name: JSDoc Action
+name: Documentation
 # You may pin to the exact commit or the version.
 # uses: andstor/jsdoc-action@06eafccd94e3fedcbf4ff0a8f23d775c169efdf2
 on:
@@ -8,21 +8,23 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    uses: andstor/jsdoc-action@v1.2.1
-    with:
-      # Source directory to build documentation from
-      source_dir: ./src
-      # Output folder for the generated documentation
-      output_dir: ./out
-      # Recurse into subdirectories when scanning for source files
-      recurse: true
-      # The path to a JSDoc configuration file
-      config_file: conf.json
-      # The JSDoc template to install
-      template: minami
-    #     # This input variable is deprecated in favour of "template"
-    #     template_name: # optional
-    #     # The relative location of the template files within the template package
-    #     template_dir: # optional
-      # The path to a Markdown file to be used as a the front page
-      front_page: # README.md
+    steps:
+      - name: JSDoc Action
+        uses: andstor/jsdoc-action@v1.2.1
+        with:
+          # Source directory to build documentation from
+          source_dir: ./src
+          # Output folder for the generated documentation
+          output_dir: ./out
+          # Recurse into subdirectories when scanning for source files
+          recurse: true
+          # The path to a JSDoc configuration file
+          config_file: conf.json
+          # The JSDoc template to install
+          template: minami
+        #     # This input variable is deprecated in favour of "template"
+        #     template_name: # optional
+        #     # The relative location of the template files within the template package
+        #     template_dir: # optional
+          # The path to a Markdown file to be used as a the front page
+          front_page: # README.md
