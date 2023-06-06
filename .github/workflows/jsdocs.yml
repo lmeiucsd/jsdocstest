@@ -19,7 +19,7 @@ jobs:
           # Recurse into subdirectories when scanning for source files
           recurse: true
           # The path to a JSDoc configuration file
-          config_file: conf.json
+          config_file: ../conf.json
           # The JSDoc template to install
           template: ./node_modules/minami
         #     # This input variable is deprecated in favour of "template"
