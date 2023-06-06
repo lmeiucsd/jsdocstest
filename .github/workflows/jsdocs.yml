@@ -21,7 +21,7 @@ jobs:
           # # The path to a JSDoc configuration file
           # config_file: ./jsdocstest/conf.json
           # The JSDoc template to install
-          template: ./node_modules/minami
+          # template: ./node_modules/minami
         #     # This input variable is deprecated in favour of "template"
         #     template_name: # optional
         #     # The relative location of the template files within the template package
