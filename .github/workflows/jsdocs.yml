@@ -21,10 +21,10 @@ jobs:
           # The path to a JSDoc configuration file
           config_file: conf.json
           # The JSDoc template to install
-          template: minami
+          template: ./node_modules/minami
         #     # This input variable is deprecated in favour of "template"
         #     template_name: # optional
         #     # The relative location of the template files within the template package
         #     template_dir: # optional
           # The path to a Markdown file to be used as a the front page
-          front_page: # README.md
+          front_page: README.md
